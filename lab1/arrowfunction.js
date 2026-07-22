@@ -17,3 +17,5 @@ const numToWords=(num)=>{
 console.log(numToWords(7));
 console.log(numToWords(3));
 console.log(numToWords(34));
+
+
