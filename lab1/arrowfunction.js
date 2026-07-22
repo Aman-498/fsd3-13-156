@@ -17,5 +17,12 @@ const numToWords=(num)=>{
 console.log(numToWords(7));
 console.log(numToWords(3));
 console.log(numToWords(34));
-
-
+//create another function that tkaes a num show in words with the help of towords function.
+const rollNum="2503203423423";
+const digits=String(rollNum).split("");
+console.log(digits);
+let inWords="";
+digits.forEach((d)=>{
+    inWords +=" " + numToWords(Number(d));
+});
+console.log(inWords);
