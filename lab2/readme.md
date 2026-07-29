@@ -7,7 +7,7 @@ it direct connect with client OS rather than browser
  - appendFile()
 - Directory Management
  - mkdir()
- - rmdir()
+ - rmdir() - depricated
  - readdir()
 - Metadata/Information
  - stat()
