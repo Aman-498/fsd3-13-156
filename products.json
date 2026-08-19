@@ -4,5 +4,29 @@
     "name": "mobile",
     "price": 15000,
     "qty": 3
+  },
+  {
+    "id": 111,
+    "name": "laptop",
+    "price": 45000,
+    "qty": 4
+  },
+  {
+    "id": 784,
+    "name": "phone",
+    "price": 78000,
+    "qty": 2
+  },
+  {
+    "id": 784,
+    "name": "phone",
+    "price": 78000,
+    "qty": 2
+  },
+  {
+    "id": 11,
+    "name": "phone",
+    "price": 5422,
+    "qty": 4
   }
 ]
