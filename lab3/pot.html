@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Indian Pot - Matka</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #fff4e6;
+            color: #3e2723;
+        }
+
+        header {
+            background: #8d3f2f;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .pot {
+            font-size: 120px;
+            margin: 20px;
+        }
+
+        h2 {
+            color: #8d3f2f;
+            margin-bottom: 15px;
+        }
+
+        .description {
+            max-width: 700px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .card h3 {
+            color: #8d3f2f;
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        button {
+            margin-top: 35px;
+            padding: 12px 25px;
+            background: #d2691e;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #a0522d;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #8d3f2f;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #8d3f2f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🏺 Indian Pot</h1>
+        <p>Traditional Indian Matka</p>
+    </header>
+
+    <div class="container">
+
+        <div class="pot">🏺</div>
+
+        <h2>Traditional Indian Pot</h2>
+
+        <p class="description">
+            Indian pots, commonly known as Matkas, have been used in
+            Indian households for centuries. Traditionally made from
+            clay, they are used to store and naturally cool drinking water.
+        </p>
+
+        <div class="features">
+
+            <div class="card">
+                <h3>🏺 Clay Made</h3>
+                <p>
+                    Made from natural clay using traditional
+                    pottery techniques.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>💧 Natural Cooling</h3>
+                <p>
+                    The porous clay helps naturally cool
+                    the water inside the pot.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🌱 Eco Friendly</h3>
+                <p>
+                    A reusable and environmentally friendly
+                    alternative to plastic containers.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🇮🇳 Indian Tradition</h3>
+                <p>
+                    Represents India's rich cultural heritage
+                    and traditional craftsmanship.
+                </p>
+            </div>
+
+        </div>
+
+        <button onclick="showMessage()">
+            Learn More
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Indian Pot | Tradition & Culture 🇮🇳</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerHTML =
+                "🏺 Matka — a beautiful combination of tradition and nature!";
+        }
+    </script>
+
+</body>
+</html>

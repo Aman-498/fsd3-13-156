@@ -1,0 +1,197 @@
+import http from 'http';
+
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+
+    res.write(`
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Water Bottle</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #eaf8ff;
+            color: #222;
+        }
+
+        header {
+            background: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 40px auto;
+            text-align: center;
+        }
+
+        .bottle {
+            font-size: 100px;
+            margin-bottom: 20px;
+        }
+
+        .container h2 {
+            color: #0077b6;
+            margin-bottom: 15px;
+        }
+
+        .container > p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            background: white;
+            width: 220px;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            color: #0077b6;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        button {
+            margin-top: 30px;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            background: #0077b6;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #023e8a;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #0077b6;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 50px;
+            background: #0077b6;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>💧 Smart Water Bottle</h1>
+        <p>Stay Hydrated. Stay Healthy.</p>
+    </header>
+
+    <div class="container">
+
+        <div class="bottle">🍼</div>
+
+        <h2>Smart Hydration for a Healthy Life</h2>
+
+        <p>
+            Our Smart Water Bottle helps you stay hydrated by
+            tracking your water intake and reminding you to drink water.
+        </p>
+
+        <div class="features">
+
+            <div class="feature">
+                <h3>💧 Water Tracking</h3>
+                <p>
+                    Track your daily water consumption and
+                    maintain your hydration level.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🔔 Smart Reminder</h3>
+                <p>
+                    Get reminders when it is time to drink
+                    water throughout the day.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>🌡️ Temperature</h3>
+                <p>
+                    Monitor the temperature of the water
+                    inside your bottle.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h3>📱 Mobile App</h3>
+                <p>
+                    Connect your bottle with your smartphone
+                    and monitor your hydration.
+                </p>
+            </div>
+
+        </div>
+
+        <button onclick="checkHydration()">
+            Check Hydration
+        </button>
+
+        <div id="message"></div>
+
+    </div>
+
+    <footer>
+        <p>© 2026 Smart Water Bottle | Drink More Water 💙</p>
+    </footer>
+
+    <script>
+        function checkHydration() {
+            document.getElementById("message").innerHTML =
+                "💧 Your next drink is due. Stay hydrated!";
+        }
+    </script>
+
+</body>
+</html>
