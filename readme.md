@@ -88,4 +88,12 @@ The data is in JSON format.
     review:200
   }
   ```
+  ## Headers
+  - is used to tell the client, the type of data sent by the server.It may be html files, JSON data, plain text file, CSS any tokens(for login)
+  1. text/plain -> text file
+  2. text/html -> html content/file
+  3. application/JSON -> json contents/file
+  4. text/css -> stylesheet
+  5. application/form-data -> for uploading file
+  6. application/auth -> for tokens the headers can be set by res object at server side by two ways
   
