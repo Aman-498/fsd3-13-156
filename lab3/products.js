@@ -10,6 +10,9 @@ export const getAllProducts = () => {
     return products;
 }
 
-export const addProduct = (product) => {
-  
-}
+export const addProduct = (item) => {
+    item.id = nextId;
+    nextId++;
+    products.push(item);
+    return item;
+  };
