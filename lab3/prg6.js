@@ -1,12 +1,18 @@
 import http from 'http';
-
+import { getAllProducts } from './products.js';
 const server = http.createServer((req, res) => {
-    if (req.url === "/" && req.method === "GET") {
+    if (req.url === "/api/v1/products" && req.method === "GET") {
         res.statusCode = 200;
-        res.end("GET Request");
+        const data = getAllProducts();
+        res.setHeader("Content-Type", "application/json");
+        res.end(
+            JSON.stringify({
+             count: data.length,
+              data,
 
-    
-    } else if (req.url === "/" && req.method === "POST") {
+        }));
+        
+    } else if (req.url === "/api/v1/products" && req.method === "POST") {
         //console.log ("Request:",req);
         let body = "";
         req.on("data", (chunk) => {
