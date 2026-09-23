@@ -96,4 +96,9 @@ The data is in JSON format.
   4. text/css -> stylesheet
   5. application/form-data -> for uploading file
   6. application/auth -> for tokens the headers can be set by res object at server side by two ways
-  
+
+  - GET-for GET request-no parameter pass to the server when we receive all items
+  - POST-to add record we pass the value from body section in json format of api tester
+  - DELETE-to delete any program we pass parameter that is ID of the product from url
+  - UPDATE-(put/patch) to update any product we pass ID from url and data to update from body
+  - 
